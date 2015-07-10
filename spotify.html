@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spotify API</title>
+	<style>
+
+	#container {
+		width: 800px;
+		margin: 0 auto;
+		color: orange;
+		font-family: trebuchet;
+		font-size: 18px;
+		line-height: 1.5em;
+
+	}
+
+	#artwork {
+		width: 100px;
+		height: 100px;
+	}
+
+	#yourTrack {
+		margin-bottom: 20px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>
+			Search Spotify!
+		</h1>
+
+		<input type="text" id="yourTrack"></input><button id="submit">Submit</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="main.js"></script>
+
+		<div>Track: <span id="theTrack"></span></div>
+		<div>Popularity: <span id="popularity"></span></div>
+		<div>Artist: <span id="artistName"></span></div>
+		<div>Album: <span id="album"></span></div>
+		<div>Album artwork: 
+			<div id="artwork"></div>
+		</div>
+
+	</div>
+
+</body>
+</html>
